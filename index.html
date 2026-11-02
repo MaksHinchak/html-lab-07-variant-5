@@ -8,8 +8,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ByteMarket - сторінка автора</title>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/javascript.css">
+  <script src="assets/js/events.js" defer></script>
 </head>
-<body>
+<body
+  onload="LabEvents.record('load', 'Сторінку повністю завантажено.')"
+  onpageshow="LabEvents.record('pageshow', 'Сторінка стала видимою.')"
+  onpagehide="LabEvents.record('pagehide', 'Вихід зі сторінки.')"
+  onfocus="LabEvents.record('focus', 'Вікно отримало фокус.')"
+  onblur="LabEvents.record('blur', 'Вікно втратило фокус.')"
+  onresize="LabEvents.record('resize', 'Розміри вікна змінено.')"
+  onbeforeprint="LabEvents.record('beforeprint', 'Підготовка до друку.')"
+  onafterprint="LabEvents.record('afterprint', 'Діалог друку закрито.')"
+  ononline="LabEvents.record('online', 'З’єднання відновлено.')"
+  onoffline="LabEvents.record('offline', 'З’єднання відсутнє.')"
+  onhashchange="LabEvents.record('hashchange', 'Змінився якір адреси.')">
   <header class="site-header">
     <h1>ByteMarket</h1>
     <nav id="site-navigation" aria-label="Головна навігація">
@@ -21,6 +34,7 @@
       <a href="tables.html">Таблиці</a>
       <a href="forms.html">Форми</a>
       <a href="svg.html">SVG</a>
+      <a href="javascript.html">JavaScript</a>
     </nav>
   </header>
 
@@ -29,7 +43,7 @@
 
     <p class="author-greeting" title="Привітання від автора">
       Вітаю на моєму навчальному веб-сайті! Мене звати Максим Гінчак. Цей сайт створений
-      у межах лабораторної роботи №6 зі створення SVG-графіки.
+      у межах лабораторної роботи №7 з JavaScript-сценаріїв.
     </p>
 
     <h4 id="about-author" title="Інформація про автора" lang="uk">Коротко про мене</h4>
@@ -57,10 +71,17 @@
       <u id="author-signature" title="Підпис автора" lang="uk">Автор сторінки:</u>
       <b id="author-name" class="author" lang="uk">Максим Гінчак</b>
     </p>
+    <p><a href="#author-title">До заголовка (подія hashchange)</a> · <a href="javascript.html">Відкрити завдання JavaScript</a></p>
+    <aside class="interaction-panel" aria-label="Журнал подій">
+      <h2>Журнал подій</h2>
+      <p id="interaction-status" role="status">Взаємодійте зі сторінкою, щоб побачити повідомлення.</p>
+      <ol id="event-log" aria-label="Останні 40 подій"></ol>
+      <button id="clear-events" type="button">Очистити журнал</button>
+    </aside>
   </main>
 
   <footer class="site-footer">
-    <small>Лабораторна робота №6. Варіант 5.</small>
+    <small>Лабораторна робота №7. Варіант 5.</small>
   </footer>
 </body>
 </html>

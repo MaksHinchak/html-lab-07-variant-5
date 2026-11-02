@@ -8,6 +8,8 @@
   <title>ByteMarket — меню сайту</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" sizes="any" title="ByteMarket">
+  <link rel="stylesheet" href="assets/css/javascript.css">
+  <script src="assets/js/events.js" defer></script>
 </head>
 <body>
   <header class="site-header" id="top">
@@ -21,6 +23,7 @@
       <a href="tables.html">Таблиці</a>
       <a href="forms.html">Форми</a>
       <a href="svg.html">SVG</a>
+      <a href="javascript.html">JavaScript</a>
     </nav>
   </header>
 
@@ -47,7 +50,8 @@
         <a href="lists.html#categories">Категорії</a>
         <a href="lists.html#selection-steps">Як обрати</a>
         <a href="lists.html#terms">Словник</a>
-      </nav>
+        <a href="javascript.html">JavaScript</a>
+    </nav>
       <p>Назву бренду <bdi id="brand-name">ByteMarket</bdi> ізольовано від напрямку навколишнього тексту тегом <code>bdi</code>.</p>
     </section>
 
@@ -66,6 +70,12 @@
       <marquee id="store-marquee" class="store-marquee" truespeed vspace="8" direction="left" style="color: #0c3158;" scrollamount="3">Нові добірки графічних адаптерів, приводів CDRW і накопичувачів уже в каталозі ByteMarket.</marquee>
       <p class="legacy-note">Нові добірки графічних адаптерів, приводів CDRW і накопичувачів уже в каталозі ByteMarket. Тег <code>marquee</code> використано за умовою варіанта.</p>
     </section>
+    <aside class="interaction-panel" aria-label="Журнал подій">
+      <h2>Журнал подій</h2>
+      <p id="interaction-status" role="status">Взаємодійте зі сторінкою, щоб побачити повідомлення.</p>
+      <ol id="event-log" aria-label="Останні 40 подій"></ol>
+      <button id="clear-events" type="button">Очистити журнал</button>
+    </aside>
   </main>
   <footer class="site-footer"><small>Максим Гінчак · Лабораторна робота №6 · Варіант 5</small></footer>
 </body>

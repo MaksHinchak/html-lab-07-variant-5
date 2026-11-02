@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ByteMarket — новини</title>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/javascript.css">
+  <script src="assets/js/events.js" defer></script>
 </head>
 <body>
   <header id="news-header" class="page-header site-header">
@@ -21,6 +23,7 @@
       <a href="tables.html">Таблиці</a>
       <a href="forms.html">Форми</a>
       <a href="svg.html">SVG</a>
+      <a href="javascript.html">JavaScript</a>
     </nav>
   </header>
 
@@ -87,10 +90,16 @@
       <h3>Примітка</h3>
       <p>Усі назви компанії, новини, адреси й товари на цьому сайті вигадані для лабораторної роботи.</p>
     </aside>
+    <aside class="interaction-panel" aria-label="Журнал подій">
+      <h2>Журнал подій</h2>
+      <p id="interaction-status" role="status">Взаємодійте зі сторінкою, щоб побачити повідомлення.</p>
+      <ol id="event-log" aria-label="Останні 40 подій"></ol>
+      <button id="clear-events" type="button">Очистити журнал</button>
+    </aside>
   </main>
 
   <footer class="site-footer">
-    <small>Автор сторінки: Максим Гінчак. Лабораторна робота №6.</small>
+    <small>Автор сторінки: Максим Гінчак. Лабораторна робота №7.</small>
   </footer>
 </body>
 </html>

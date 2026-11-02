@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/svg.css">
   <script src="assets/js/svg.js" defer></script>
+  <link rel="stylesheet" href="assets/css/javascript.css">
+  <script src="assets/js/events.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -19,6 +21,7 @@
       <a href="news.html">Новини</a><a href="lists.html">Списки</a>
       <a href="menu.html">Меню</a><a href="tables.html">Таблиці</a>
       <a href="forms.html">Форми</a><a href="svg.html" class="active" aria-current="page">SVG</a>
+      <a href="javascript.html">JavaScript</a>
     </nav>
   </header>
   <main class="site-main">
@@ -246,6 +249,12 @@
         </figure>
       </div>
     </section>
+    <aside class="interaction-panel" aria-label="Журнал подій">
+      <h2>Журнал подій</h2>
+      <p id="interaction-status" role="status">Взаємодійте зі сторінкою, щоб побачити повідомлення.</p>
+      <ol id="event-log" aria-label="Останні 40 подій"></ol>
+      <button id="clear-events" type="button">Очистити журнал</button>
+    </aside>
   </main>
   <footer class="site-footer"><small>Максим Гінчак · Лабораторна робота №6 · Варіант 5</small></footer>
 </body>
