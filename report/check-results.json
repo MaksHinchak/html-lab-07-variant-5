@@ -1,0 +1,36 @@
+{
+  "browser": "Chrome",
+  "documentPropertyCount": 315,
+  "documentPropertiesIncludeNonEnumerableAndInherited": true,
+  "regexDefaultMatches": 6,
+  "regexEdgeCases": 5,
+  "arrayDefaultB": [
+    5,
+    -3,
+    8,
+    -2
+  ],
+  "arrayValidCases": 3,
+  "arrayInvalidCases": 6,
+  "bodyEvents": [
+    "load",
+    "pageshow",
+    "pagehide",
+    "resize",
+    "offline",
+    "online",
+    "hashchange",
+    "beforeprint",
+    "afterprint"
+  ],
+  "textEvents": true,
+  "imageEvents": true,
+  "keyboard": true,
+  "sessionHistory": true,
+  "noJsDisabled": true,
+  "blockedStorage": true,
+  "mobileWidth": 390,
+  "checkedPages": 9,
+  "checkedLocalLinks": 142,
+  "errors": []
+}
